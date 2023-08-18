@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DaRun - Calculadora de Pace</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <link rel="shortcut icon" href="img/icon-running.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header1">
+      <div class="logo"><h1>DaRun</h1></div>
+      <div class="texto-header">
+        <h2>Calculadora de Ritmo Corrida (Pace)</h2>
+      </div>
+    </header>
+    <!-- Conteudo Calculo -->
+    <main class="Principal">
+      <div class="Box-Principal">
+        <form action="Distancia" class="ContainerDistancia">
+          <label for="Distance" class="txtDistancia">
+            <h2 class="h2Distancia">Distancia</h2></label
+          >
+          <input
+            type="number"
+            name="distanciaPercorrida"
+            id="distancia"
+            placeholder="Kilometros"
+            class="InputDistance"
+          />
+        </form>
+
+        <form action="Tempo" class="ContainerTempo">
+          <label for="time" class="txtTempo">
+            <h2 class="h2Tempo">Tempo Gasto</h2>
+          </label>
+          <input
+            type="number"
+            name="TimeHours"
+            id="Hours"
+            placeholder="Horas"
+            class="InputHours"
+            required
+          />
+          <input
+            type="number"
+            name="TimeMinutes"
+            id="Minutes"
+            placeholder="Minutos"
+            class="InputMinutes"
+            required
+          />
+          <input
+            type="number"
+            name="TimeSeconds"
+            id="Seconds"
+            placeholder="Segundos"
+            class="InputSeconds"
+            required
+          />
+        </form>
+        <div class="btn">
+          <button type="button" value="Calcular Ritmo" class="btnCalcular" class="enviar" id="send" onclick="calcularPace()">
+            <h3>Calcular Ritmo</h3>
+          </button>
+        </div>
+
+        <div class="resultado">
+          <section class="sectionResultado">
+            <h3 class="h3Resultado">Resultado : 
+                <div id="resultado"></div>
+            </h3>
+          </section>
+        </div>
+      </div>
+    </main>
+    <!-- Conteudo de Dicas -->
+    <aside class="Posts">
+      <header class="headerCards">
+        <div class="posth2">
+          <h2 class="h2Card">Precisando de dicas pra corrida?</h2>
+        </div>
+        <div class="posth3">
+          <h3 class="h3Card">Recomendamos os conteúdos abaixo</h3>
+        </div>
+      </header>
+
+      <div class="Cards">
+        <div class="containerCard">
+          <div class="card">
+            <a href="#">
+              <img src="./img/5km.jpg" alt="" />
+            </a>
+            <h4>10 Dicas para correr sua primeira prova</h4>
+            <p class="txtCard">
+              10 dicas para estreantes em corridas: O guia essencial para correr
+              sua primeira prova com sucesso.
+            </p>
+          </div>
+
+          <div class="card">
+            <a href="#" target="_blank">
+              <img src="./img/aquecimento.jpg" alt="" />
+            </a>
+            <h4>Aquecimento Ativo para Corredores</h4>
+            <p class="txtCard">
+              Maximize seu Desempenho com um Aquecimento Ativo: Dicas Essenciais
+              para Corredores.
+            </p>
+          </div>
+          <div class="card">
+            <a href="#">
+              <img src="./img/cafe.jpg" alt="" />
+            </a>
+            <h4>Alimentos para o Café da Manhã</h4>
+            <p class="txtCard">
+              Energize-se pela Manhã: Descubra os Melhores Alimentos para o Café
+              da Manhã." Um guia completo com opções nutritivas e saborosas para
+              começar o dia com energia.
+            </p>
+          </div>
+
+          <div class="card">
+            <a href="#">
+              <img src="./img/treino-de-tiro.jpg" alt="" />
+            </a>
+            <h4>Como fazer treino de tiros?</h4>
+            <p class="txtCard">
+              Potencialize seu Condicionamento: Aprenda a Fazer um Treino de
+              Tiros Intervalado. Um passo a passo para incorporar treinos de
+              tiros intervalados e melhorar seu desempenho na corrida.
+            </p>
+          </div>
+          <div class="card">
+            <a href="#">
+              <img src="./img/fortalecimento.jpg" alt="" />
+            </a>
+            <h4>Fortalecimento Muscular com Educador</h4>
+            <p class="txtCard">
+              Construa Músculos e Melhore sua Corrida: Fortalecimento Muscular
+              com um Educador Físico. Saiba como um educador físico pode
+              auxiliar no fortalecimento específico para corredores.
+            </p>
+          </div>
+          <div class="card">
+            <a href="#">
+              <img src="./img/gasto calorico.jpg" alt="" />
+            </a>
+            <h4>Como medir seu gasto calorico?</h4>
+            <p class="txtCard">
+              Otimize seu Desempenho: Como Medir seu Gasto Calórico na Corrida?"
+              Descubra as melhores maneiras de calcular e monitorar seu gasto
+              calórico durante as corridas, para alcançar seus objetivos de
+              forma eficiente.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="btnMore">
+        <button type="button" class="btnCard">
+          <h3>Ler mais sobre</h3>
+        </button>
+      </div>
+    </aside>
+
+    <footer class="footer">
+      <div class="footerInfo">
+        <ul>
+          <li>
+            <a href="#">Dicas Corrida</a>
+          </li>
+          <li>
+            <a href="#">Contratar nossos serviços</a>
+          </li>
+          <li>
+            <a href="#">Fale Conosco</a>
+          </li>
+          <li>
+            <a href="#">Sobre Nós</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

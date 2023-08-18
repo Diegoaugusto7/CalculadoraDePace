@@ -1,0 +1,48 @@
+@media (max-width:767px) {
+    
+/* header */
+
+.logo {
+    /* background-color: red; */
+    margin: auto;
+    padding-right: 40px;
+    
+}
+    .logo h1{
+        /* border: 1px solid yellow;
+        background-color: antiquewhite; */
+        text-align: center;
+    }
+
+    .texto-header{
+        display: none;
+    }
+    
+
+/* botoes calculadora */
+
+.btnCalcular h3,  .sectionResultado h3, .btnCard h3{
+    font-size: 18px;
+}
+
+.btnCalcular,.sectionResultado,.btnCard{
+    width: 90%;
+    height: 50px;
+    
+
+}
+
+footer ul{
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.footer{
+    height: 250px;
+    margin: auto;
+    padding-right: 20px;
+}
+}
+

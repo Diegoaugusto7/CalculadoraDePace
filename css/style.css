@@ -1,0 +1,361 @@
+/* Imports / Correções */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+input[type=number]::-webkit-inner-spin-button { 
+        -webkit-appearance: none;
+    }
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number] { 
+    color: var(--btnCalcularRitmo);
+    font-weight: bolder;
+    font-size: 20px;
+}
+/*Cores padroes*/
+:root{
+    --CorPrincipal: #8A1414;
+    --btnCalcularRitmo:#FA9600;
+    --btnPace:#308D39;
+    --background:#F5F4F6;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* Header */
+header{
+    background-color: var(--CorPrincipal);
+    display: flex;
+    height: 100px;
+    
+}
+
+.logo{
+    /* border: 1px solid yellow; */
+    flex:40% ;
+    padding-left: 10%;
+    text-align: center;
+    color: white;
+    margin: auto;
+
+
+}
+
+.logo h1{
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
+}
+
+.texto-header{
+    /* border: 1px solid blue; */
+    flex: 40%;
+    text-align: center;
+    color: white;
+    margin: auto;
+
+}
+
+/* Conteudo */
+
+.Principal{
+     background-color: none;
+    /* height: 660px; */
+
+}
+
+.Box-Principal{
+    background-color: var(--background);
+    padding-bottom: 5%;
+}
+
+
+
+
+
+.ContainerDistancia{
+    /* border: 1px solid yellow;
+    background-color: yellowgreen; */
+    
+    height: 40%;
+    text-align: center;
+}
+
+.txtDistancia{
+    font-size: 36px;
+    padding-left: 10%;
+}
+
+
+
+
+
+
+.ContainerTempo{
+    /* border: 1px solid red;
+    background-color: aqua; */
+    
+    height: 40%;
+    text-align: center;
+}
+
+.txtTempo{
+    font-size: 36px;
+    padding-left: 10%;
+}
+.h2Distancia{
+    padding-bottom: 30px;
+    font-family: 'Lobster', cursive;
+}
+.h2Tempo{
+    padding-bottom: 30px;
+    font-family: 'Lobster', cursive;
+}
+input{
+    text-align: center;
+    height: 50px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+
+/* input::placeholder {
+    color: gray
+  } */
+
+
+
+.btnCalcular{
+    background-color: var(--btnCalcularRitmo);
+    width: 30%;
+    height: 50px;
+    border-radius: 15px;
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    
+
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    
+
+    /* border: 2px solid green; */
+
+}
+
+.btnCalcular h3{
+    /* border: 2px solid red; */
+    color: white;
+    margin: auto;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.sectionResultado{
+
+    background-color: var(--btnPace);
+    width: 50%;
+    height: 75px;
+    border-radius: 15px;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+
+    
+
+}
+
+.sectionResultado h3{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+/* Cards */
+
+.headerCards{
+    text-align: center;
+    display: block;
+}
+
+.h2Card, .h3Card{
+    color: white;
+    padding-top: 5px;
+    font-family: 'Lobster', cursive;
+    
+}
+
+
+.posth2{
+font-size: 24px;
+}
+
+.posth3{
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+.Cards{
+
+   /*  background-color: aquamarine;
+    border: 3px solid yellow; */
+    
+    padding-left: 10%;
+    padding-right:10%;
+    
+
+    
+}
+
+.containerCard{
+   /*  border: 3px solid blue;
+    background-color: orangered;  */
+    
+    display: flex;  
+    /* padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px; */
+
+    
+    
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.card{
+   /*  border: 1px solid teal;
+    background-color: #FA9600; */
+    width: 300px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    
+
+}
+
+.card img{
+    border-radius: 15px;
+    margin-top: 10px;
+
+    width: 180px;
+    height: 200px;
+    
+}
+
+.card img:hover{
+    border: 1px solid var(--btnCalcularRitmo);
+    
+    
+}
+
+.card h4{
+   /* border: 1px solid orange;  */
+    margin-top: 2%;
+    font-size: 16px;
+    
+    margin: auto;
+    width: 300px;
+    text-align: center;
+
+
+}
+
+.card p {
+    margin-top: 10px;
+}
+
+.card :hover{
+    color: #FA9600;
+    cursor: pointer;
+}
+
+.btnCard{
+    background-color: var(--btnCalcularRitmo);
+    width: 30%;
+    height: 50px;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    
+
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.btnCard h3{
+    /* border: 2px solid red; */
+    color: white;
+    margin: auto;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btnCard:hover{
+    background-color: var(--btnPace);
+    border: 1px solid var(--btnCalcularRitmo);
+    cursor: pointer;
+}
+
+
+
+
+
+
+.footer{
+   /*  background-color: var(--CorPrincipal); */
+    background-image: linear-gradient(180deg,var(--CorPrincipal),#831c1c,#741f1f, rgb(49, 6, 6));
+    height: 400px;
+    color: white;
+    padding-left: 10%;
+    padding-top: 50px;
+
+}
+
+.footerInfo ul, li,  a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 7px;
+}
+
+
+.footerInfo a:hover{
+    color: var(--btnCalcularRitmo);
+}
+
+
+
+
+
+
+
+
+
+
