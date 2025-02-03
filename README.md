@@ -1,6 +1,6 @@
 # 🏃‍♂️ Calculadora de Pace 🏃‍♀️  
 
-🔗 **[Acesse aqui](https://diegoaugusto7.github.io/CalculadoraDePace/)**  
+🔗 **[Acesse aqui](https://darun-calculadora-de-pace.vercel.app/)**  
 
 ---
 
