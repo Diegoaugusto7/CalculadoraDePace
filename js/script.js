@@ -1,10 +1,4 @@
-// INICIO - logica certinha
-import { inject } from "@vercel/analytics";
-
-inject();
-
-
-
+// Lógica Certinha
 function calcularPace() {
   var distanciaPercorrida = document.getElementById("distancia"); // pedir info para user
   var TimeHours = document.getElementById("Hours");
