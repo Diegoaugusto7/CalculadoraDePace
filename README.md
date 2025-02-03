@@ -20,7 +20,7 @@ O projeto começou como um **exercício de aprendizado**, mas logo percebi seu p
 
 ✅ **Figma** – Design e prototipagem da interface  
 ✅ **HTML, CSS e JavaScript** – Desenvolvimento do site do zero  
-✅ **GitHub Pages** – Hospedagem da aplicação  
+✅ **Vercel** – Hospedagem da aplicação  
 
 ---
 
