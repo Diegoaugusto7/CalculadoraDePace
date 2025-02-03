@@ -1,4 +1,10 @@
 // INICIO - logica certinha
+import { inject } from "@vercel/analytics";
+
+inject();
+
+
+
 function calcularPace() {
   var distanciaPercorrida = document.getElementById("distancia"); // pedir info para user
   var TimeHours = document.getElementById("Hours");
